@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hello there</title>
+  </head>
+  <body ng-app="MyApplication">
+    <h1>This is index page</h1>
+
+    <div id="content" ng-controller="IndexCtrl">
+      <p>{{ message }}</p>
+      <input ng-model="vProps.userName" type="text">
+      <vue-component name="GracefulComponent" v-props="vProps"></vue-component>
+    </div>
+
+    <script type="text/javascript" src="assets/application.js"></script>
+  </body>
+</html>

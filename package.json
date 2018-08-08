@@ -1,0 +1,30 @@
+{
+  "name": "angularjs-vuejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "public/application.json",
+  "dependencies": {
+    "coffee-loader": "^0.9.0",
+    "ngVue": "^1.2.1",
+    "vue": "^2.5.17",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  },
+  "devDependencies": {
+    "angular": "^1.2.32",
+    "babel-core": "^6.26.3",
+    "babel-helper-vue-jsx-merge-props": "^2.0.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-transform-vue-jsx": "^3.7.0",
+    "babel-preset-env": "^1.7.0",
+    "coffeescript": "^2.3.1"
+  },
+  "scripts": {
+    "dev-server": "webpack-dev-server --config webpack.config.js --progress --colors --port 8080 --mode development --content-base build/",
+    "build": "webpack --config webpack.config.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
