@@ -6,8 +6,16 @@ const VComponent = Vue.component('graceful-component', {
   props: {
     'userName': String,
   },
+  methods: {
+    greetings() {this.$emit('greetings')}
+  },
   render() {
-    return(<div><h2>Nice to meet you, { this.userName }!</h2></div>);
+    return(
+      <div>
+        <h2>Nice to meet you, { this.userName }!</h2>
+        <button onClick={this.greetings}>Hello</button>
+      </div>
+    );
   }
 })
 

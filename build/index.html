@@ -10,7 +10,7 @@
     <div id="content" ng-controller="IndexCtrl">
       <p>{{ message }}</p>
       <input ng-model="vProps.userName" type="text">
-      <vue-component name="GracefulComponent" v-props="vProps"></vue-component>
+      <vue-component name="GracefulComponent" v-props="vProps" v-on-greetings="greetings"></vue-component>
     </div>
 
     <script type="text/javascript" src="assets/application.js"></script>

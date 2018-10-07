@@ -6,13 +6,12 @@ init = ()->
   app = angular.module('MyApplication', ['ngVue']);
 
   controller = app.controller('IndexCtrl', ['$scope', ($scope)->
-    $scope.message = 'Greetings, my friend!';
+    $scope.greetings = ()->
+      alert('Greetings, my friend!!!');
 
     $scope.vProps = {
-      userName: 'Denys'
+      userName: 'Denyska'
     }
-    $scope.gracefulGreeting = (message)->
-      alert(message);
 
   ])
 
